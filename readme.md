@@ -15,3 +15,6 @@ python3 -m pip install --upgrade pip
 
 4) Get requirement packages:
 pip install -r requirements.txt
+
+5) Get Django default project structure:
+django-admin startproject mysite .
