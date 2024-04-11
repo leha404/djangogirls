@@ -20,7 +20,7 @@ python3 -m pip install --upgrade pip
 4) Get requirement packages (check requirements.txt):
 pip install -r requirements.txt
 
-5) Get Django default project structure:
+5) *optional: Get Django default project structure (if needed!):
 django-admin startproject mysite .
 
 6) Migrate database:
@@ -28,3 +28,6 @@ python manage.py migrate
 
 7) Run server:
 python manage.py runserver
+
+8) *optional: Creating app:
+python manage.py startapp blog
