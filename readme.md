@@ -3,6 +3,10 @@ Learning Django.
 Inspired by DjangoGirls:
 https://tutorial.djangogirls.org/ru/django/
 
+PreRequesites:
+0) Delete all inner folders for clean project.
+There are should be: readme and requirements
+
 Instructions:
 1) Install virtual env (macOS):
 python3 -m venv myvenv
