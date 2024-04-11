@@ -9,3 +9,6 @@ python3 -m venv myvenv
 
 2) Run virtual environment:
 source myvenv/bin/activate
+
+3) Update Python package manager:
+python3 -m pip install --upgrade pip
