@@ -13,7 +13,7 @@ source myvenv/bin/activate
 3) Update Python package manager:
 python3 -m pip install --upgrade pip
 
-4) Get requirement packages:
+4) Get requirement packages (check requirements.txt):
 pip install -r requirements.txt
 
 5) Get Django default project structure:
@@ -21,3 +21,6 @@ django-admin startproject mysite .
 
 6) Migrate database:
 python manage.py migrate
+
+7) Run server:
+python manage.py runserver
