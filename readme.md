@@ -1,59 +1,61 @@
-Learning Django.
+# Learning Django.
 
-Inspired by DjangoGirls:
+**Inspired by DjangoGirls:** 
+
 https://tutorial.djangogirls.org/ru/django/
 
-//
-// Install Instructions:
-//////////
-1) Install virtual env (macOS):
-python3 -m venv myvenv
+---
 
-2) Run virtual environment:
-source myvenv/bin/activate
+### Install Instructions:
+1. Install virtual env (macOS):  
+`python3 -m venv myvenv`
 
-3) Update Python package manager:
-python3 -m pip install --upgrade pip
+2. Run virtual environment:  
+`source myvenv/bin/activate`
 
-4) Get requirement packages (check requirements.txt):
-pip install -r requirements.txt
+3. Update Python package manager:  
+`python3 -m pip install --upgrade pip`
 
-5) *optional: Get Django default project structure (if needed!):
-django-admin startproject mysite .
+4. Get requirement packages (check requirements.txt):  
+`pip install -r requirements.txt`
 
-6) Apply migrations to database:
-python manage.py migrate
+5. _*optional:_ Get Django default project structure (if needed!):  
+`django-admin startproject mysite .`
 
-7) Create superUser for Django admin:
-python manage.py createsuperuser
+6. Apply migrations to database:  
+`python manage.py migrate`
 
-//
-// Run server:
-//////////
-python manage.py runserver
+7. Create superUser for Django admin:  
+`python manage.py createsuperuser`
 
-//
-// Apply new changes.
-// Create App, Make migrations, Apply migrations
-//////////
-- *optional: Creating app (Register it name (blog) in settings.py):
-python manage.py startapp blog
+---
 
-- Create migrations, if has changes (blog - app name, may be different):
-python manage.py makemigrations blog
+### Run server:
+`python manage.py runserver`
+
+### Apply new changes:
+**Create App, Make migrations, Apply migrations**
+
+- _*optional:_ Creating app (Register it name (blog) in settings.py):  
+`python manage.py startapp blog`
+
+- Create migrations, if has changes (blog - app name, may be different):  
+`python manage.py makemigrations blog`
 
 - APPLY MIGRATIONS (step 6 above)
 
-//
-// Deploy instruction on PythonAnywhere
-//////////
-1) Register an account on PythonAnywhere.com
-2) Go to Account Tab and create API token if not exists
-3) Make a Bash console and follow next instructions:
+---
 
-- pip3.6 install --user pythonanywhere
+### Deploy instruction on PythonAnywhere
+1. Register an account on PythonAnywhere.com
 
-- pa_autoconfigure_django.py https://github.com/YOUR_GITHUB/YOUR_REPO.git
-(P.S. You can copy it from url)
+2. Go to Account Tab and create API token if not exists
 
-- python manage.py createsuperuser
+3. Make a Bash console and follow next instructions:
+
+- `pip3.6 install --user pythonanywhere`
+
+- `pa_autoconfigure_django.py https://github.com/YOUR_GITHUB/YOUR_REPO.git`
+    - **(P.S. You can copy it from url)**
+
+- `python manage.py createsuperuser`
