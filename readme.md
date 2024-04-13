@@ -36,7 +36,7 @@ https://tutorial.djangogirls.org/ru/django/
 ### Apply new changes:
 **Create App, Make migrations, Apply migrations**
 
-- _*optional:_ Creating app (Register it name (blog) in settings.py):  
+- _*optional:_ Creating app (Do not forget register it's name (blog) in settings.py):  
 `python manage.py startapp blog`
 
 - Create migrations, if has changes (blog - app name, may be different):  
@@ -56,6 +56,7 @@ https://tutorial.djangogirls.org/ru/django/
 - `pip3.6 install --user pythonanywhere`
 
 - `pa_autoconfigure_django.py https://github.com/YOUR_GITHUB/YOUR_REPO.git`
-    - **(P.S. You can copy it from url)**
+    - **(P.S. You can copy it from url) As example, this repo:**
+    - `pa_autoconfigure_django.py https://github.com/leha404/djangogirls`
 
 - `python manage.py createsuperuser`
