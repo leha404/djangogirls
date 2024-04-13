@@ -3,7 +3,9 @@ Learning Django.
 Inspired by DjangoGirls:
 https://tutorial.djangogirls.org/ru/django/
 
-Install Instructions:
+//
+// Install Instructions:
+//////////
 1) Install virtual env (macOS):
 python3 -m venv myvenv
 
@@ -22,17 +24,36 @@ django-admin startproject mysite .
 6) Apply migrations to database:
 python manage.py migrate
 
+7) Create superUser for Django admin:
+python manage.py createsuperuser
+
+//
 // Run server:
+//////////
 python manage.py runserver
 
-// Apply new changes. Create App, Make migrations, Apply migrations
-- *optional: Creating app (Register it in settings.py):
+//
+// Apply new changes.
+// Create App, Make migrations, Apply migrations
+//////////
+- *optional: Creating app (Register it name (blog) in settings.py):
 python manage.py startapp blog
 
-- Create migrations, if has changes (blog - app name, mey be different):
+- Create migrations, if has changes (blog - app name, may be different):
 python manage.py makemigrations blog
 
 - APPLY MIGRATIONS (step 6 above)
 
-- Create superUser for Django admin:
-python manage.py createsuperuser
+//
+// Deploy instruction on PythonAnywhere
+//////////
+1) Register an account on PythonAnywhere.com
+2) Go to Account Tab and create API token if not exists
+3) Make a Bash console and follow next instructions:
+
+- pip3.6 install --user pythonanywhere
+
+- pa_autoconfigure_django.py https://github.com/YOUR_GITHUB/YOUR_REPO.git
+(P.S. You can copy it from url)
+
+- python manage.py createsuperuser
