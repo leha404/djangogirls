@@ -60,3 +60,9 @@ https://tutorial.djangogirls.org/ru/django/
     - `pa_autoconfigure_django.py https://github.com/leha404/djangogirls`
 
 - `python manage.py createsuperuser`
+
+---
+
+P.S. Upload static files (CSS):  
+1. Activate venv
+2. python manage.py collectstatic
