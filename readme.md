@@ -19,6 +19,9 @@ https://tutorial.djangogirls.org/ru/django/
 4. Get requirement packages (check requirements.txt):  
 `pip install -r requirements.txt`
 
+- *In requirements:*  
+`Django~=3.2.10`
+
 5. _*optional:_ Get Django default project structure (if needed!):  
 `django-admin startproject mysite .`
 
